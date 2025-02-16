@@ -14,7 +14,7 @@ pipeline {
         }
         stage('Run') {
             steps {
-                sh 'mvn exec:java -Dexec.mainClass="org.example.Main" '
+                bat 'mvn exec:java -Dexec.mainClass="org.example.Main" '
             }
         }
     }
